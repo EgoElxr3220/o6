@@ -13,13 +13,13 @@ namespace CarSpace
         {
             Model = model;
             Speed = 0;
-            Console.WriteLine(Speed);
+            
         }
 
         public void Accelerate()
         {
             Speed += 10;
-            Console.WriteLine(Speed);
+            
         }
 
         public void Brake()
@@ -29,7 +29,7 @@ namespace CarSpace
             {
                 Speed = 0;
             }
-            Console.WriteLine(Speed);
+            
         }
     }
 }
