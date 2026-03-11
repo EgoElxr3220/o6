@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CarUtilities;
 
 namespace CarSpace
 {
@@ -13,13 +14,13 @@ namespace CarSpace
         {
             Model = model;
             Speed = 0;
-            
+            CarUtilities.CarUtilities.DisplayCar(this);
         }
 
         public void Accelerate()
         {
             Speed += 10;
-            
+            CarUtilities.CarUtilities.DisplayCar(this);
         }
 
         public void Brake()
@@ -29,7 +30,7 @@ namespace CarSpace
             {
                 Speed = 0;
             }
-            
+            CarUtilities.CarUtilities.DisplayCar(this);
         }
     }
 }
